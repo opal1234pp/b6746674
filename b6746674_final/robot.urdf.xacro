@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+
+    <!-- เรียกใช้ Link และ Joint ต่างๆจากไฟล์ robot_core.xacro -->
+    <xacro:include filename="robot_core.xacro" /> 
+
+    <!-- เรียกใช้ parameter ของ ros2_control จากไฟล์ ros2_control.xacro -->
+    <xacro:include filename="ros2_control.xacro" />
+
+    <!-- เรียกใช้ Link และ Joint ของ LiDAR จาก ไฟล์ lidar.xacro -->
+    <xacro:include filename="lidar.xacro" />
+
+    <!-- เรียกใช้ Link และ Joint ของกกล้อง จาก ไฟล์ camera.xacro -->
+    <xacro:include filename="camera.xacro" />
+
+    
+</robot>
